@@ -9,7 +9,7 @@
 body {
   background-color: #00ddff;
   font-family: "Inter", sans-serif;
-  width: 85%;
+  width: 90%;
   max-width: 650px;
   margin: auto;
 }
@@ -213,4 +213,31 @@ body {
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(9px);
   border-radius: 5px;
+}
+
+@media (max-width: 576px) {
+  .extrainformation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  .extrainformation .card {
+    height: 100px;
+    width: 150px;
+  }
+  .forecast .card .list-group-item .comingtemptext {
+    margin-left: 10px;
+  }
+  .forecast .card .list-group-item .data2 {
+    font-size: 20px;
+  }
+  .tempsection .card-title {
+    font-size: 22px;
+  }
+  .location img {
+    position: relative;
+    bottom: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
